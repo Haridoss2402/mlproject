@@ -8,7 +8,7 @@ os.makedirs(os.path.dirname(logs_path),exist_ok=True)
 
 logging.basicConfig(
     filename=logs_path,
-    format="%(asctime)s - %(lineno)d -  %(name)s - %(levelname)s - %(message)s",
+    format="[%(asctime)s] - %(lineno)d -  %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO,
 )
 
